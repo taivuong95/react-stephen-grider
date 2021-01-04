@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 
 const Accordion = ({ items }) => {
 
@@ -15,12 +15,12 @@ const Accordion = ({ items }) => {
                 <div
                     className={`title ${active}`}
                     onClick={() => onTitleClick(index)}
-                    >
+                >
                     <i className="dropdown icon"></i>
                     {item.title}
                 </div>
                 <div className={`content ${active}`}>
-                    <p>{ item.content }</p>
+                    <p>{item.content}</p>
                 </div>
             </React.Fragment>
         )
